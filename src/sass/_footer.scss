@@ -1,0 +1,13 @@
+footer{
+    height: 200px;
+    background-color: brown;
+    input:nth-child(1){
+        @extend %button;
+        color: white;
+    }
+    input:nth-child(2){
+        @extend %button;
+        color: orange;
+    }
+
+}

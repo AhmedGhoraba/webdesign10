@@ -1,0 +1,14 @@
+@mixin  fontStyle($color,$size,$weight,$type) {
+    color:$color;
+    font-size: $size;
+    font-weight: $weight;
+    font-family: $type;
+}
+
+@mixin Media($less,$great,$width){
+    @media (min-width:$less) and (max-width:$great){
+        section p{
+            width:$width;
+        }
+    }
+}

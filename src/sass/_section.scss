@@ -1,0 +1,25 @@
+section{
+    height: 500px;
+    background-color: $secColor;
+    display: flex;
+    flex-wrap: wrap;
+    
+
+    p{
+        width:25%;
+    }
+}
+
+@include Media("992px","1200px",33.33%);
+@include Media("768px","992px",50%);
+@include Media("576px","768px",100%);
+
+@if ($secColor == green){
+    section p{
+        @include fontStyle(yellow,"20px","bold","Arial");
+    }
+}@else{
+    section p{
+        @include fontStyle(red,"20px","bold","Arial");
+    }
+}
